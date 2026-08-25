@@ -2,6 +2,8 @@
 
 > Finding the patterns, anomalies, and decision questions worth modeling.
 
+![Customer churn exploratory analysis dashboard](exploratory_analysis_dashboard.svg)
+
 ```mermaid
 flowchart LR
  A[Raw data] --> B[Profile and clean]
