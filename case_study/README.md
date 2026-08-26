@@ -10,10 +10,17 @@ A marketing team needs to understand customer acquisition quality, funnel leakag
 pip install -r requirements.txt
 python generate_data.py
 python eda_case_study.py
+python generate_screenshots.py
 pytest -q
 ```
 
 All tables, diagnostics, charts, and the machine-readable executive summary are written to `outputs/`.
+
+## Illustrated walkthrough
+
+Read the [complete step-by-step EDA techniques guide](TECHNIQUES.md). It documents 17 stages with code patterns, interpretation guidance, decision implications, common analytical traps, and eight generated screenshots.
+
+![Comprehensive EDA workflow](images/01_eda_workflow.png)
 
 ## EDA workflow and techniques
 
@@ -140,4 +147,3 @@ Engineered features are documented and kept separate from raw fields.
 ## Decision framework
 
 Material findings should end in one of five outcomes: a tracking fix, business decision, controlled experiment, model feature, or explicit no-action conclusion. EDA discovers patterns and generates hypotheses; it does not establish causality by itself.
-
