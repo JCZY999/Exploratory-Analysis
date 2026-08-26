@@ -77,6 +77,14 @@ Relevant professional context includes analysis across **500K+ users**, improvin
 - Saved data-quality tests and assumptions
 - Clear separation of observation, inference, and causal claim
 
-## Next build steps
+## Complete Python case study
 
-Add a synthetic dataset, SQL extraction, profiling notebook, Plotly dashboard, executive summary, and testable hypothesis backlog.
+The repository now includes a [comprehensive, reproducible Python EDA case study](case_study/README.md) with a synthetic marketing-funnel dataset, automated profiling, missingness and outlier diagnostics, statistical tests, correlation and categorical association analysis, PCA and clustering, funnel and time-series exploration, interactive Plotly outputs, and automated tests.
+
+```bash
+cd case_study
+pip install -r requirements.txt
+python generate_data.py
+python eda_case_study.py
+pytest -q
+```
