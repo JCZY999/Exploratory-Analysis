@@ -88,3 +88,19 @@ python generate_data.py
 python eda_case_study.py
 pytest -q
 ```
+
+## Marketing mix modeling case study
+
+Explore [marketing-mix-modeling-case-study.ipynb](case_study/marketing-mix-modeling-case-study.ipynb), a self-contained notebook with 156 weeks of synthetic marketing data. It covers data auditing, exploratory plots, adstock and saturation, rolling validation, a chronological holdout, model-implied channel contributions, and a constrained same-budget scenario. Findings are educational and do not establish real-world causal lift.
+
+Use a separate environment for this notebook:
+
+```bash
+python -m venv .venv-mmm
+# Activate: source .venv-mmm/bin/activate (macOS/Linux)
+# Activate: .venv-mmm\Scripts\Activate.ps1 (Windows PowerShell)
+python -m pip install numpy pandas matplotlib ipykernel jupyterlab
+python -m jupyterlab case_study/marketing-mix-modeling-case-study.ipynb
+```
+
+Run all cells from the top. No external data or credentials are required. Validated on Python 3.12 with NumPy 2.5.3, pandas 3.0.1, and Matplotlib 3.11.1; the notebook prints runtime versions. Saved source omits execution outputs to keep reviews compact; the results section records the validated seeded run.
